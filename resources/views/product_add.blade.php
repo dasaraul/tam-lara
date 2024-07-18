@@ -13,7 +13,7 @@
         <div class="col-xl-12 col-lg-12">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title">Add Product</h4>
+                    <h4 class="card-title">Add Menu Item</h4>
                 </div>
                 <div class="card-body">
                     <div class="basic-form">
@@ -37,32 +37,32 @@
                         <form action="{{ url('/add/product') }}" method="POST">
                             @csrf
                             <div class="form-group row">
-                                <label class="col-sm-3 col-form-label">Product Name</label>
+                                <label class="col-sm-3 col-form-label">Dish Name</label>
                                 <div class="col-sm-5">
-                                    <input type="text" class="form-control" placeholder="Product Name" name="name">
+                                    <input type="text" class="form-control" placeholder="Dish Name" name="name">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-sm-3 col-form-label">Product Category</label>
+                                <label class="col-sm-3 col-form-label">Cuisine Category</label>
                                 <div class="col-sm-5">
-                                    <input type="text" class="form-control" placeholder="Product Category" name="category">
+                                    <input type="text" class="form-control" placeholder="Cuisine Category" name="category">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-sm-3 col-form-label">Product Price</label>
+                                <label class="col-sm-3 col-form-label">Price</label>
                                 <div class="col-sm-5">
-                                    <input type="number" class="form-control" placeholder="Product Price" name="price">
+                                    <input type="number" class="form-control" placeholder="Price" name="price">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-sm-3 col-form-label">Product Quantity</label>
+                                <label class="col-sm-3 col-form-label">Quantity Available</label>
                                 <div class="col-sm-5">
-                                    <input type="number" class="form-control" placeholder="Product Quantity" name="quantity">
+                                    <input type="number" class="form-control" placeholder="Quantity Available" name="quantity">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <div class="col-sm-10">
-                                    <button type="submit" class="btn btn-primary">Add Product</button>
+                                    <button type="submit" class="btn btn-primary">Add Dish</button>
                                 </div>
                             </div>
                         </form>
